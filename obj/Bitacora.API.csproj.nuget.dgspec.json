@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Vanguardia_Project\\Bitacora.API\\BackEnd-Bitacora\\Bitacora.API.csproj": {}
+    "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj": {}
   },
   "projects": {
-    "D:\\Vanguardia_Project\\Bitacora.API\\BackEnd-Bitacora\\Bitacora.API.csproj": {
+    "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Vanguardia_Project\\Bitacora.API\\BackEnd-Bitacora\\Bitacora.API.csproj",
+        "projectUniqueName": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj",
         "projectName": "Bitacora.API",
-        "projectPath": "D:\\Vanguardia_Project\\Bitacora.API\\BackEnd-Bitacora\\Bitacora.API.csproj",
-        "packagesPath": "C:\\Users\\lesly\\.nuget\\packages\\",
-        "outputPath": "D:\\Vanguardia_Project\\Bitacora.API\\BackEnd-Bitacora\\obj\\",
+        "projectPath": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj",
+        "packagesPath": "/Users/alvaro/.nuget/packages/",
+        "outputPath": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lesly\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/alvaro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
