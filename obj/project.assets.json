@@ -7190,11 +7190,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj",
       "projectName": "Bitacora.API",
       "projectPath": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj",
       "packagesPath": "/Users/alvaro/.nuget/packages/",
       "outputPath": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/obj/",
+=======
+      "projectUniqueName": "D:\\Vanguardia_Project\\Bitacora.API\\Bitacora-BackEnd\\Bitacora.API.csproj",
+      "projectName": "Bitacora.API",
+      "projectPath": "D:\\Vanguardia_Project\\Bitacora.API\\Bitacora-BackEnd\\Bitacora.API.csproj",
+      "packagesPath": "C:\\Users\\lesly\\.nuget\\packages\\",
+      "outputPath": "D:\\Vanguardia_Project\\Bitacora.API\\Bitacora-BackEnd\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alvaro/.nuget/NuGet/NuGet.Config"
