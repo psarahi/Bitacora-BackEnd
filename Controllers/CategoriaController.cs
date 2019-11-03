@@ -69,7 +69,7 @@ namespace Bitacora.API.Controllers
             {
             }
 
-            return NoContent();
+            return Ok(categoria);
         }
 
         [HttpDelete("{id}")]

@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj": {}
-  },
-  "projects": {
-    "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj",
-        "projectName": "Bitacora.API",
-        "projectPath": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/Bitacora.API.csproj",
-        "packagesPath": "/Users/alvaro/.nuget/packages/",
-        "outputPath": "/Users/alvaro/WorkDocuments/DevProjects/Bitacora/Bitacora-BackEnd/obj/",
-=======
     "D:\\Vanguardia_Project\\Bitacora.API\\Bitacora-BackEnd\\Bitacora.API.csproj": {}
   },
   "projects": {
@@ -25,10 +12,9 @@
         "projectPath": "D:\\Vanguardia_Project\\Bitacora.API\\Bitacora-BackEnd\\Bitacora.API.csproj",
         "packagesPath": "C:\\Users\\lesly\\.nuget\\packages\\",
         "outputPath": "D:\\Vanguardia_Project\\Bitacora.API\\Bitacora-BackEnd\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/alvaro/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lesly\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -101,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

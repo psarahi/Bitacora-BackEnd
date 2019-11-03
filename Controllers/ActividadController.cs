@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bitacora.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class ActividadController : ControllerBase
     {
@@ -24,8 +24,20 @@ namespace Bitacora.API.Controllers
 
         public async Task<IActionResult> GetAll()
         {
-            var Categorias = await _context.Actividades.ToListAsync();
-            return Ok(Categorias);
+            var result = from d in _context.Actividades
+                         join b in _context.Categorias on d.CategoriaId equals b.Id
+                         select new
+                         {
+                             Descripcion = d.Descripcion,
+                             Fecha = d.Fecha,
+                             HoraInicial = d.HoraInicial,
+                             HoraFinal = d.HoraFinal,
+                             Id = d.Id,
+                             CategoriaId = d.CategoriaId,
+                             NombreDeCategoria = b.Nombre
+                         };
+
+            return Ok(result.ToListAsync());
         }
 
 
@@ -40,6 +52,64 @@ namespace Bitacora.API.Controllers
             }
 
             return actividad;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetActividadByFecha()
+        {
+            // var actividad = await _context.Actividades.FirstOrDefaultAsync(x => x.Fecha == new DateTime());
+            // var actividades = await _context.Actividades.Where(t => t.Fecha.Date == DateTime.Today).ToListAsync();
+            var result = from d in _context.Actividades
+                         join b in _context.Categorias on d.CategoriaId equals b.Id
+                         where d.Fecha.Date == DateTime.Today
+                         select new
+                         {
+                             Descripcion = d.Descripcion,
+                             Fecha = d.Fecha,
+                             HoraInicial = d.HoraInicial,
+                             HoraFinal = d.HoraFinal,
+                             Id = d.Id,
+                             CategoriaId = d.CategoriaId,
+                             NombreDeCategoria = b.Nombre
+                         };
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(result.ToListAsync());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetActividadByFilter(string fechaInicial, string fechaFinal)
+        {
+            // var actividad = await _context.Actividades.FirstOrDefaultAsync(x => x.Fecha == new DateTime());
+            // var actividades = await _context.Actividades.Where(t => t.Fecha.Date == DateTime.Today).ToListAsync();
+
+            var fi = Convert.ToDateTime(fechaInicial);
+            var ff = Convert.ToDateTime(fechaFinal);
+
+            var result = from d in _context.Actividades
+                         join b in _context.Categorias on d.CategoriaId equals b.Id
+                         where d.Fecha.Date >= fi && d.Fecha.Date <= ff
+                         select new
+                         {
+                             Descripcion = d.Descripcion,
+                             Fecha = d.Fecha,
+                             HoraInicial = d.HoraInicial,
+                             HoraFinal = d.HoraFinal,
+                             Id = d.Id,
+                             CategoriaId = d.CategoriaId,
+                             NombreDeCategoria = b.Nombre
+                         };
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(result.ToListAsync());
         }
 
         [HttpPost]
